@@ -1,0 +1,20 @@
+<h1>Create User</h1>
+<a href="/" class="btn btn-primary">All Users</a>
+<form action="/create" method="post">
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" class="form-control" id="Name" name="name" aria-describedby="NameHelp">
+    <small id="NameHelp" class="form-text text-muted">We'll never share your Name with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="Email">Email address</label>
+    <input type="email" class="form-control" id="Email" name="email" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your Email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="Telephone">Telephone</label>
+    <input type="tel" class="form-control" id="Telephone" name="telephone" aria-describedby="TelephoneHelp">
+    <small id="TelephoneHelp" class="form-text text-muted">We'll never share your Telephone with anyone else.</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Save</button>
+</form>
