@@ -1,8 +1,13 @@
 const express = require('express')
 const {engine} = require('express-handlebars')
+const cors = require('cors')
+// const mysql = require('mysql2')
+
 const app = express()
 const port = process.env.PORT || 3000
 const router = require('./src/routes/index')
+
+app.use(cors())
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
@@ -18,3 +23,5 @@ app.get('/',(req,res)=>{
 app.listen(port, ()=>{
     console.log('The server is listening on port ' + port)
 })
+
+// connection.end()
